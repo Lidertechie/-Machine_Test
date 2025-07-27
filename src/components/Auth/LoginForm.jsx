@@ -31,12 +31,20 @@ const handleSignIn = (e) => {
   }
 
   // ✅ Email validation (if input looks like an email)
-  const isEmail = username.includes('@');
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (isEmail && !emailRegex.test(username)) {
-    toast.error('Please enter a valid email address');
-    return;
-  }
+const trimmedUsername = username.trim();
+const isEmail = trimmedUsername.includes('@');
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!trimmedUsername) {
+  toast.error('Username or email is required');
+  return;
+}
+
+if (isEmail && !emailRegex.test(trimmedUsername)) {
+  toast.error('Please enter a valid email address');
+  return;
+}
+
 
   // ✅ Password validation
   if (!validatePassword(password)) {

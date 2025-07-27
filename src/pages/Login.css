@@ -1,0 +1,46 @@
+.login-wrapper {
+  min-height: 100vh; /* Use min-height to ensure proper stretch */
+  display: flex;
+  align-items: center;
+}
+
+.login-container {
+  flex: 1;
+  height: 100%;
+}
+
+.form-column {
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.illustration-img {
+  width: 300.49px;
+  height: 509.74px;
+  object-fit: contain;
+  opacity: 1;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .image-column {
+    display: none !important;
+  }
+
+  .form-column {
+    padding: 20px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}

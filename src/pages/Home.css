@@ -6,6 +6,9 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .left-line,
@@ -17,12 +20,12 @@
 
 .left-line {
   width: 385px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 .right-line {
   width: 376px;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .welcome-text {
@@ -32,3 +35,134 @@
   white-space: nowrap;
 }
 
+
+
+
+
+.slider-box,
+.frame-box {
+  border: 2px solid #3D3D3D;
+
+  background-color: #fff;
+}
+
+.frame-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.frame-box h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.frame-box p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.frame-box ul {
+  padding-left: 20px;
+}
+
+.frame-box li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Country Card Styles */
+.country-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flag-container {
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.country-info {
+  flex: 1;
+}
+
+.country-info h5 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.country-info p {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .country-card {
+    flex-direction: column;
+    height: auto;
+    width: 100% !important;
+  }
+  
+  .flag-container {
+    width: 100% !important;
+    height: 120px !important;
+  }
+}
+
+/* ✅ Responsive: stack lines on top and bottom on small screens */
+@media (max-width: 768px) {
+  .welcome-line-container {
+    flex-direction: column;
+  }
+
+  .left-line,
+  .right-line {
+    width: 100%;
+  }
+
+  .left-line {
+    margin-bottom: 10px;
+  }
+
+  .right-line {
+    margin-top: 10px;
+  }
+
+  .welcome-text {
+    font-size: 22px;
+  }
+
+    .country-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .flag-container {
+    width: 100% !important;
+    height: 120px !important;
+  }
+}
+
+.custom {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+@media (max-width: 768px) {
+  .custom-container-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

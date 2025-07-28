@@ -13,6 +13,7 @@ import { logout } from "../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import FrameBox from "../components/Home/Frame";
+import Footer from "../components/Home/Footer";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -41,7 +42,7 @@ const Home = () => {
   const visibleCountries = filteredCountries.slice(0, visibleCount);
 
   return (
-    <Container fluid className="custom">
+    <Container fluid className="p-4 px-3 px-md-5 px-lg-6">
       <Row className="align-items-center justify-content-between py-3">
         <Col>
           <h5 className="fw-bold">Countries</h5>
@@ -123,15 +124,18 @@ const Home = () => {
 </Row>
 
 
-          {visibleCount < filteredCountries.length && (
-            <div className="text-center my-4">
-              <Button onClick={handleLoadMore} variant="dark">
-                Load more
-              </Button>
-            </div>
-          )}
+       {visibleCount < filteredCountries.length && (
+  <div className="load-more-container">
+    <button onClick={handleLoadMore} className="load-more-button">
+      Load more
+    </button>
+  </div>
+)}
+
         </>
       )}
+
+      <Footer/>
     </Container>
   );
 };

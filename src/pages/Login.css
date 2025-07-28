@@ -31,7 +31,7 @@
   opacity: 1;
 }
 
-/* Mobile View */
+
 @media (max-width: 768px) {
   .image-column {
     display: none !important;

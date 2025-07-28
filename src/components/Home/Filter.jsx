@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Filter.css';
+import './Style/Filter.css';
 import Hamburger from '../../assets/icon/Hamburger.svg';
 
 const continents = ['All', 'Asia', 'Europe',];

@@ -1,4 +1,4 @@
-/* Slider.css */
+
 .slider-container {
   position: relative;
   width: 100%;
@@ -41,7 +41,7 @@
   margin-bottom: 0;
 }
 
-/* Custom Navigation */
+
 .custom-navigation {
   position: absolute;
   bottom: 20px;
@@ -96,9 +96,36 @@
   object-fit: contain;
 }
 
-/* Remove all default spacing */
+
 .carousel-control-next,
 .carousel-control-prev,
 .carousel-indicators {
   display: none;
+}
+
+.slider-box {
+  width: 807px;
+  height: 498px;
+  border: 2px solid #000;
+  opacity: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item-no-padding {
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

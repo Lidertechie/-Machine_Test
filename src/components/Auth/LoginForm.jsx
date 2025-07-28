@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { useDispatch } from 'react-redux'; // ✅
-import { login } from '../../features/auth/authSlice'; // ✅
+import { useDispatch } from 'react-redux'; 
+import { login } from '../../features/auth/authSlice'; 
 
 import './LoginForm.css';
 
@@ -15,7 +15,7 @@ const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-  const dispatch = useDispatch(); // ✅
+  const dispatch = useDispatch(); 
 
   const validatePassword = (password) => {
     const regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
@@ -30,7 +30,7 @@ const handleSignIn = (e) => {
     return;
   }
 
-  // ✅ Email validation (if input looks like an email)
+
 const trimmedUsername = username.trim();
 const isEmail = trimmedUsername.includes('@');
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -46,7 +46,7 @@ if (isEmail && !emailRegex.test(trimmedUsername)) {
 }
 
 
-  // ✅ Password validation
+
   if (!validatePassword(password)) {
     toast.error(
       'Password must be at least 8 characters long and contain at least 1 capital letter, 1 number, and 1 symbol.'

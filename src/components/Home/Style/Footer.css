@@ -1,0 +1,17 @@
+.frame-box {
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.frame-box ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.frame-box li {
+  margin-bottom: 8px;
+  color: #444;
+}

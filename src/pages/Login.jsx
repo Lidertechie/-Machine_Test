@@ -9,12 +9,12 @@ const Login = () => {
     <div className="login-wrapper">
       <Container fluid className="login-container">
         <Row className="h-100 g-0">
-          {/* Left Column: Login Form */}
+      
           <Col xs={12} md={6} className="form-column">
             <LoginForm />
           </Col>
 
-          {/* Right Column: Illustration Image */}
+        
           <Col md={6} className="image-column">
             <img
               src={loginImage}

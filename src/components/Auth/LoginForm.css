@@ -1,8 +1,8 @@
 .form-section {
   width: 100%;
   display: flex;
-  justify-content: center;  /* center the form horizontally */
-  align-items: center;      /* center vertically if needed */
+  justify-content: center;  
+  align-items: center;      
 }
 
 .form-inner {
@@ -10,7 +10,7 @@
   max-width: 320px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;   /* 👈 this left-aligns ALL contents */
+  align-items: flex-start;  
 }
 
 .input-box,
@@ -187,16 +187,16 @@
 
 @media (max-width: 768px) {
   .form-inner {
-    align-items: center; /* Center-align all contents */
-    text-align: center; /* Optional: Center text inside elements */
+    align-items: center; 
+    text-align: center; 
   }
 
   .checkbox-row {
     justify-content: center;
-    margin: 8px 0 16px; /* Optional: adjust spacing */
+    margin: 8px 0 16px; 
   }
 
   .social-icons {
-    justify-content: center; /* Center social icons row */
+    justify-content: center; 
   }
 }

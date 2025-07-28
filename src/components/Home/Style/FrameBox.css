@@ -1,28 +1,14 @@
 .frame-box {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f8f9fa;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.frame-box h3 {
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.frame-box p {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.frame-box ul {
-  padding-left: 20px;
-}
-
-.frame-box li {
-  margin-bottom: 8px;
-  color: #444;
+.frame-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }

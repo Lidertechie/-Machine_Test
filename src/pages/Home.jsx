@@ -42,7 +42,8 @@ const Home = () => {
   const visibleCountries = filteredCountries.slice(0, visibleCount);
 
   return (
-    <Container fluid className="p-4 px-3 px-md-5 px-lg-6">
+   <Container fluid className="p-4 px-3 px-md-5 centered-container">
+
       <Row className="align-items-center justify-content-between py-3">
         <Col>
           <h5 className="fw-bold">Countries</h5>
@@ -64,8 +65,7 @@ const Home = () => {
           <FrameBox />
         </Col>
 
-        {/* Slider - show second on mobile */}
-        <Col xs={12} md={8} className="order-2 order-md-1 mb-4 mb-md-0">
+               <Col xs={12} md={8} className="order-2 order-md-1 mb-4 mb-md-0">
           <div className="slider-box h-100">
             <Slider />
           </div>

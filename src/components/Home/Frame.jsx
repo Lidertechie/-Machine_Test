@@ -1,16 +1,11 @@
 import React from 'react';
-import { Card, Row, Col, Image } from 'react-bootstrap';
-import './Style/FrameBox.css';
-import FrameImg from '../../assets/frame.png';
+import { Card, Row, Col } from 'react-bootstrap';
 
 const FrameBox = () => {
   return (
-    <Card className="frame-box h-100">
+    <Card className="h-100">
       <Row>
-        <Col xs={12} md={4} className="mb-3 mb-md-0 d-flex align-items-center justify-content-center">
-          <Image src={FrameImg} alt="Frame" fluid rounded />
-        </Col>
-        <Col xs={12} md={8}>
+        <Col xs={12}>
           <Card.Body>
             <Card.Title>Content Section</Card.Title>
             <Card.Text>
